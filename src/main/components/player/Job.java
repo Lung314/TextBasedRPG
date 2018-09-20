@@ -12,6 +12,11 @@ public class Job {
 		this.indictator = new Color(0,0,0);
 	}
 	
+	public Job(String t, JobBonus b) {
+		this.title = t;
+		this.bonus = b;
+	}
+	
 	public Job(String t, JobBonus b, Color ind) {
 		this.title = t;
 		this.bonus = b;

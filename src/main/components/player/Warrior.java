@@ -8,6 +8,12 @@ public class Warrior extends Job{
 	private static final JobBonus BONUS = new JobBonus(HP,STR,DEF);
 	
 	public Warrior() {
-		super(TITLE, BONUS, INDICATOR);
+		super(TITLE, BONUS);
+	}
+	
+	public Warrior(boolean ind) {
+		super(TITLE, BONUS);
+		
+		if(ind) setIndicator(INDICATOR);
 	}
 }
