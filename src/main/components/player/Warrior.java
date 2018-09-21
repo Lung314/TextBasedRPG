@@ -1,9 +1,16 @@
-package main.components;
+package main.components.player;
 import java.awt.Color;
+
+/*
+ * Description:
+ * 
+ * 
+ * Last Edited by Lung Yang on 9/21/2018
+ */
 
 public class Warrior extends Job{
 	private static final String TITLE = "Warrior";
-	private static final int HP = 3, STR = 2, DEF = 3;
+	private static final double HP = 1.8, STR = 1.2, DEF = 1.5;
 	private static final Color INDICATOR = new Color(255,0,0);
 	private static final JobBonus BONUS = new JobBonus(HP,STR,DEF);
 	
@@ -13,7 +20,6 @@ public class Warrior extends Job{
 	
 	public Warrior(boolean ind) {
 		super(TITLE, BONUS);
-		
-		if(ind) setIndicator(INDICATOR);
+		if(ind) super.indicator=INDICATOR;
 	}
 }
