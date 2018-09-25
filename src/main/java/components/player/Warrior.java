@@ -1,4 +1,4 @@
-package main.components.player;
+package main.java.components.player;
 import java.awt.Color;
 
 /*

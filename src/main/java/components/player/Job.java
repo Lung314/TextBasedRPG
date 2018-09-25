@@ -1,4 +1,4 @@
-package main.components.player;
+package main.java.components.player;
 import java.awt.Color;
 
 /*
@@ -44,5 +44,9 @@ public abstract class Job {
 	
 	public Color getIndicator() {
 		return this.indicator;
+	}
+	
+	public String toString() {
+		return title;
 	}
 }
