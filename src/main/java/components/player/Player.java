@@ -1,4 +1,5 @@
 package main.java.components.player;
+import main.java.components.Entity;
 
 /*
  * Description:
@@ -7,16 +8,13 @@ package main.java.components.player;
  * Last Edited by Lung Yang on 9/25/2018
  */
 
-public class Player {
-	private String name;
+public class Player extends Entity {
 	private Job job;
 	private static final int 	HP_LVLUP_MULTIPLIER = 10, 
 								STR_LVLUP_MULTIPLIER = 12, 
 								DEF_LVLUP_MULTIPLIER = 13; 
 								// the greater the value, the lower the stat growth
 	private int base_hp, base_str, base_def,
-				max_hp, max_str, max_def,
-				current_hp, current_str, current_def,
 				lvl, current_exp, max_exp;
 	
 	////////////////
@@ -80,36 +78,8 @@ public class Player {
 	//Getter Methods//
 	//////////////////
 	
-	public String getName() {
-		return name;
-	}
-	
 	public Job getJob() {
 		return job;
-	}
-	
-	public int getMaxHP() {
-		return max_hp;
-	}
-	
-	public int getCurrentHP() {
-		return current_hp;
-	}
-	
-	public int getMaxSTR() {
-		return max_str;
-	}
-	
-	public int getCurrentSTR() {
-		return current_str;
-	}
-	
-	public int getMaxDEF() {
-		return max_def;
-	}
-	
-	public int getCurrentDEF() {
-		return current_def;
 	}
 	
 	public int getLvl() {
